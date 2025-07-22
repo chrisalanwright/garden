@@ -27,4 +27,19 @@
 }
 
 #level-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  .peas {
+    grid-row-start: 1;
+    grid-column: 1 / span 2;
+  }
+  .onions {
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .carrots {
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
 }
