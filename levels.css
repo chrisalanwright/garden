@@ -5,8 +5,26 @@
 
 #level-2 {
   display: grid;
-  grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
   .peas {
     grid-column: 1 / span 2;
   }
+}
+
+#level-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  .onions {
+    grid-column: 2 / span 2;
+  }
+  .tomatoes {
+    grid-column: 1 / span 2;
+  }
+  .carrots {
+    grid-column: 1 / span 3;
+  }
+}
+
+#level-4 {
 }
